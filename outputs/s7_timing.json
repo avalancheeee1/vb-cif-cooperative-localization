@@ -1,0 +1,30 @@
+{
+  "ckf_us_per_update": 118.018,
+  "n_rep": 5000,
+  "rows": [
+    {
+      "max_vb_iter": 2,
+      "us_per_update": 164.395,
+      "mean_n_iter": 2,
+      "ratio_vs_ckf": 1.39
+    },
+    {
+      "max_vb_iter": 3,
+      "us_per_update": 241.775,
+      "mean_n_iter": 3,
+      "ratio_vs_ckf": 2.05
+    },
+    {
+      "max_vb_iter": 4,
+      "us_per_update": 324.174,
+      "mean_n_iter": 4,
+      "ratio_vs_ckf": 2.75
+    },
+    {
+      "max_vb_iter": 6,
+      "us_per_update": 452.0,
+      "mean_n_iter": 6,
+      "ratio_vs_ckf": 3.83
+    }
+  ]
+}

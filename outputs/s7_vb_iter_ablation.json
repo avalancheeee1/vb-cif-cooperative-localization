@@ -1,0 +1,30 @@
+{
+  "compass_deg": 0.5,
+  "n_trials": 10,
+  "rows": [
+    {
+      "max_vb_iter": 2,
+      "armse_mean": 3.303446871049404,
+      "armse_std": 0.9212835895746758,
+      "per_epoch_vehicle_ms": 2.5811599479190286
+    },
+    {
+      "max_vb_iter": 3,
+      "armse_mean": 3.306887409677054,
+      "armse_std": 0.9211136840295472,
+      "per_epoch_vehicle_ms": 3.052264781251021
+    },
+    {
+      "max_vb_iter": 4,
+      "armse_mean": 3.3069337846387072,
+      "armse_std": 0.9211083689224961,
+      "per_epoch_vehicle_ms": 3.0611784791684236
+    },
+    {
+      "max_vb_iter": 6,
+      "armse_mean": 3.306934606941762,
+      "armse_std": 0.9211087942495628,
+      "per_epoch_vehicle_ms": 3.085537458334026
+    }
+  ]
+}
