@@ -132,6 +132,6 @@ def main(seeds=30):
 if __name__ == "__main__":
     import argparse
     p = argparse.ArgumentParser()
-    p.add_argument("--seeds", type=int, default=30)
+    p.add_argument("--seeds", type=int, default=100)
     args = p.parse_args()
     main(args.seeds)

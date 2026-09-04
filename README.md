@@ -66,8 +66,8 @@ only needed if you re-generate publication figures (not included here).
 ## Quick start
 
 ```bash
-# 1. Core failure-mechanism sweep (0.5 / 2 / 5 deg compass, 30 seeds each)
-python s1_mechanism.py --seeds 30
+# 1. Core failure-mechanism sweep (0.5 / 2 / 5 deg compass, 100 seeds each)
+python s1_mechanism.py --seeds 100
 
 # 2. Isolated cooperative-update timing (VB/CKF cost ratio)
 python s7_timing.py
@@ -103,18 +103,18 @@ implement the post-hoc power / TOST-sensitivity analyses behind the
 ## Reference results
 
 The `outputs/` directory contains the reference JSON produced by a full
-30-seed run. Headline numbers (ARMSE, metres):
+100-seed run. Headline numbers (ARMSE, metres):
 
 | compass | CKF-CL | VB-CIF | VB−CKF (paired) | G-VB-CIF | G-VB−CKF (paired) | guard rate |
 |---|---|---|---|---|---|---|
-| 0.5° | 3.296 | 3.264 | −0.031 | 3.181 | −0.115 | 0.128 |
-| 2.0° | 3.254 | 4.817 | +1.562 | 3.099 | −0.155 | 0.218 |
-| 5.0° | 3.449 | 5.665 | +2.216 | 3.306 | −0.143 | 0.254 |
+| 0.5° | 3.365 | 3.365 | −0.000 | 3.251 | −0.114 | 0.132 |
+| 2.0° | 3.378 | 4.787 | +1.408 | 3.140 | −0.238 | 0.225 |
+| 5.0° | 3.622 | 5.677 | +2.055 | 3.408 | −0.215 | 0.261 |
 
-VB > CKF in 30/30 seeds at 2° and 5° (14/30 at 0.5°), the guard-disable rate
-rises monotonically with compass noise (0.128 → 0.218 → 0.254, the "mechanism
-switch"), and G-VB-CIF recovers or beats CKF-CL at every level. Re-running the
-script with the same seeds reproduces these values exactly.
+VB > CKF in 100/100 seeds at 5° (98/100 at 2°, 51/100 at 0.5°), the
+guard-disable rate rises monotonically with compass noise (0.132 → 0.225 →
+0.261, the "mechanism switch"), and G-VB-CIF recovers or beats CKF-CL at every
+level. Re-running the script with the same seeds reproduces these values exactly.
 
 ---
 

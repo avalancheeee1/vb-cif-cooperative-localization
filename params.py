@@ -238,7 +238,7 @@ class StatisticsParams:
     equivalence margin ``tost_margin`` is 0.5 m, a conservative 20% of the fixed
     range-noise standard deviation (2.5 m).
     """
-    n_trials: int = 30                   # M for headline comparisons
+    n_trials: int = 100                  # M for headline comparisons (S1 mechanism sweep)
     n_trials_small: int = 20             # M for ablation / robustness scans
     alpha: float = 0.05                  # two-sided significance level
     power: float = 0.8                   # power for MDD
